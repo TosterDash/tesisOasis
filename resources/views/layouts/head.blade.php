@@ -20,12 +20,11 @@
 </head>
 <header>
     <div class="container-fluid text-center logo-border logo-background">
-        <img class="logo" src="img/oasis-logo2.png">
-    </div>
-    <div class="">
+        
         <nav class="navbar navbar-expand-sm ">
-
-            <!-- Links -->
+          <img class="logo" src="img/oasis-logo2.png">
+          <!-- Links -->
+          <div class="ml-auto">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link text-danger" href="#">Inicio</a>
@@ -37,13 +36,15 @@
                 <a class="nav-link text-danger" href="#">Acceso clientes</a>
               </li>
             </ul>
-          
-          </nav>
+          </div>
+        
+        </nav>
     </div>
+    
 </header>
-<body>
-    @yield('bodyPage')
-</body>
+
+@yield('bodyPage')
+
 <footer>
     @yield('footerPage')
 </footer>

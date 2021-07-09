@@ -3,7 +3,7 @@
 }
 
 .logo-background{
-    background-color: #efefef;
+    background-color: #282828;
 }
 
 .logo-border{
@@ -13,5 +13,12 @@
 }
 
 .background-wood1{
-    background-image: image("img/background/wood1.jpg");
+    background-image: url("../img/background/wood1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.background-body{
+    background-image: url("../img/background/bodyWood.jpg");
 }

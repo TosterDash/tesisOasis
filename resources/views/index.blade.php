@@ -3,7 +3,8 @@
 @section('titlePage',"Tacos Oasis")
 
 @section('bodyPage')
-<div class="container">
+<body class="background-body">
+<div class="container my-5 px-0">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
@@ -16,13 +17,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/banner/agua.jpg" alt="Los Angeles" width="1100" height="500">
+            <img src="img/banner/agua.jpg" alt="Los Angeles" width="100%" height="500">
           </div>
           <div class="carousel-item">
-            <img src="img/banner/flan.jpg" alt="Chicago" width="1100" height="500">
+            <img src="img/banner/flan.jpg" alt="Chicago" width="100%" height="500">
           </div>
           <div class="carousel-item">
-            <img src="img/banner/quesadilla.jpg" alt="New York" width="1100" height="500">
+            <img src="img/banner/quesadilla.jpg" alt="New York" width="100%" height="500">
           </div>
         </div>
         
@@ -40,8 +41,18 @@
 
 <!-- Part 2 -->
 
-<div class="container background-wood1">
-    <h1>aaaaaaaaaaaaa</h1>
-</div>
+  <div class="container background-wood1 ">
+    <div class="row">
+      <div class="col-4">
+        <h2>BIENVENIDOS</h2>
+        <p>Desde el año 1978 les hemos brindado servicios a nuestros clientes con nuestros productos de calidad, venga a visitarnos
+          en la calle 3 número 502.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+
     
 @endsection
