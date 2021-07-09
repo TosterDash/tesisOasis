@@ -1,0 +1,17 @@
+.logo{
+    width: 10%;
+}
+
+.logo-background{
+    background-color: #efefef;
+}
+
+.logo-border{
+    border: 1px;
+    border-style: solid;
+    border-color: #98989889;
+}
+
+.background-wood1{
+    background-image: image("img/background/wood1.jpg");
+}
