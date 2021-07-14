@@ -27,7 +27,7 @@
           <div class="ml-auto">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Inicio</a>
+                <a class="nav-link text-danger" href="/menu">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="#">Menú</a>
