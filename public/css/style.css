@@ -21,4 +21,21 @@
 
 .background-body{
     background-image: url("../img/background/bodyWood.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bc-b{
+    background-color: #2828284e;
+    
+}
+
+.text-white{
+    color: #ffff;
+}
+
+.border-card{
+    border-radius: 20px;
+    
 }
