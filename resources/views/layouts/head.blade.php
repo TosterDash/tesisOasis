@@ -27,13 +27,19 @@
           <div class="ml-auto">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link text-danger" href="/menu">Inicio</a>
+                <a class="nav-link text-danger after-nav" href="{{route("index")}}">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Menú</a>
+                <a class="nav-link text-danger after-nav" href="{{route("menu")}}">Menú</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Acceso clientes</a>
+                <a class="nav-link text-danger after-nav" href="">Acceso clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger after-nav" href="{{route("registro")}}">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger after-nav" href="{{route("login")}}">Login</a>
               </li>
             </ul>
           </div>

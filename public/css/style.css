@@ -39,3 +39,7 @@
     border-radius: 20px;
     
 }
+
+.after-nav::after{
+    content: " | ";
+}
