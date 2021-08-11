@@ -39,7 +39,18 @@
                 <a class="nav-link text-danger after-nav" href="{{route("registro")}}">Registrarse</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger after-nav" href="{{route("login")}}">Login</a>
+                @auth
+                  <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">{{Auth::user()->email}}</button>
+                  </form>
+                  
+                     
+                @else
+                
+                <a class="nav-link text-danger after-nav" href="{{route("redirect")}}">Login</a>  
+                  
+                @endauth
               </li>
             </ul>
           </div>

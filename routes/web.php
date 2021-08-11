@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\googleController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\menuController;
@@ -24,3 +25,11 @@ Route::get('/menu', menuController::class)->name("menu");
 Route::get('/login', loginController::class)->name("login");
 
 Route::get('/registro', registroController::class)->name("registro");
+
+Route::get('auth/google/redirect', [googleController::class,'redirect'])->name("redirect");
+Route::get('auth/google/callback', [googleController::class,'callback'])->name("callback");
+Route::post('logout',[googleController::class,'googleLogout'])->name("logout");
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

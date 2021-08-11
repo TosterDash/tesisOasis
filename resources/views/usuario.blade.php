@@ -15,6 +15,7 @@
 <p><button name="Inicio" id="IDInicio" onclick="" type="Button" >Inicio</button></p>
                  </div>
                  <p>¿no esta registrado? crea su cuenta nueva ahora mismo</p>
+                 <a>Login con google</a>
                  <p></p>
                  <p><button name="Registro" id="IDregistro" onclick="location.href='registro'" type="button">Registro</button></p>
                 
