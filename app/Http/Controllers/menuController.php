@@ -9,7 +9,7 @@ class menuController extends Controller
 {
     //
     public function __invoke(){
-        $menu = menu::all();
-        return view("menu",compact("menu"));
+       
+        return view("menu");
     }
 }

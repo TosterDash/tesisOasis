@@ -17,6 +17,7 @@ class Menu extends Migration
         Schema::create('menus',function(Blueprint $table){
             $table -> id();
             $table -> string('nombreProducto');
+            $table -> string('descripcion')->nullable();
             $table -> float('precio');
             $table->timestamps();
         });

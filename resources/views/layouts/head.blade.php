@@ -22,11 +22,19 @@
                 <a class="nav-link text-danger after-nav" href="{{route("index")}}">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger after-nav" href="{{route("menu")}}">Menú</a>
+                <a class="nav-link text-danger after-nav" href="{{route("menu")}}">
+                  @auth
+                  Hacer pedido/Menú
+                  @else
+                  Menú
+                  @endauth
+                </a>
               </li>
+              @auth
               <li class="nav-item">
-                <a class="nav-link text-danger after-nav" href="">Acceso clientes</a>
+                <a class="nav-link text-danger after-nav" href=""><i class="fas fa-shopping-cart px-2"><span class="badge badge-danger">0</span></i></a>
               </li>
+              @endauth
               <li class="nav-item">
                 <div class="dropdown">
                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -65,6 +73,7 @@
     @yield('footerPage')
 </footer>
 <script src="{{asset("js/app.js")}}" defer></script>
+@livewireScripts
 </html>    
     
     
