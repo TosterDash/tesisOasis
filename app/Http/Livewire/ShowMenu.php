@@ -39,6 +39,7 @@ class ShowMenu extends Component
             ]);
             $this->cantidad = 0;
             $this->notas = '';  
+            $this->emit('renderShowCart');
         }
     }
 }

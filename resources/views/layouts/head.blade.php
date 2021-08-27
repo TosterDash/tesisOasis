@@ -31,9 +31,7 @@
                 </a>
               </li>
               @auth
-              <li class="nav-item">
-                <a class="nav-link text-danger after-nav" href=""><i class="fas fa-shopping-cart px-2"><span class="badge badge-danger">0</span></i></a>
-              </li>
+                @livewire('show-cart')
               @endauth
               <li class="nav-item">
                 <div class="dropdown">
